@@ -18,6 +18,6 @@ public class TestHerencia {
         Cliente cl2 = new Cliente(true, "Matias", 'v', 30, "Crisostomo Alvarez 3296");
         System.out.println("cl2 = " + cl2);
         
-        System.out.println("cl2 = " + cl2);
+        
     }
 }
