@@ -1,0 +1,20 @@
+package operaciones;
+
+public class Operaciones {
+
+    public static int sumar(int a, int b) {
+        System.out.println("int a, int b");
+        
+        return a + b;
+    }
+
+    public static double sumar(double a, double b) {
+        System.out.println("double a, double b");
+        return a + b ;
+    }
+//    public static double sumar(int a,int b,int c){
+//        return a+b+c;
+//    }    Igual aunque cambie el retorno no lo permite.Solo depende
+    //del numero de argumentos
+
+}
