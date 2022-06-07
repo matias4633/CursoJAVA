@@ -1,11 +1,12 @@
 package cpjlaboratoriofinal;
 
+import excepciones.*;
 import java.util.Scanner;
 import negocio.*;
 
 public class CPJLaboratorioFinal {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws AccesoDatosEx {
         Scanner entrada = new Scanner(System.in);
         int opcion = 10;
         String nombreArchivo = "default.txt";
@@ -26,7 +27,7 @@ public class CPJLaboratorioFinal {
                 case 0:
                     System.out.println("Programa terminado.");
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         System.out.println("");
                     }
@@ -37,7 +38,7 @@ public class CPJLaboratorioFinal {
 
                     catalogo.iniciarArchivo(nombreArchivo);
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         System.out.println("");
                     }
@@ -50,7 +51,7 @@ public class CPJLaboratorioFinal {
                     String catalogoAgregar = entrada.nextLine();
                     catalogo.agregarPelicula(nombre, catalogoAgregar);
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         System.out.println("");
                     }
@@ -63,7 +64,7 @@ public class CPJLaboratorioFinal {
                     System.out.println("Listado de pelicuas:");
                     catalogo.listarPeliculas(nombreArchivo);
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         System.out.println("");
                     }
@@ -76,7 +77,7 @@ public class CPJLaboratorioFinal {
                     String catalogoBuscar = entrada.nextLine();
                     catalogo.buscarPelicula(catalogoBuscar, nombre);
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         System.out.println("");
                     }
